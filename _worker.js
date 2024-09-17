@@ -1,13 +1,13 @@
 // @ts-nocheck
 // <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
 // @ts-ignore
-// https://github.com/bia-pain-bache/BPB-Worker-Panel
+// https://github.anyone.gq/bia-pain-bache/BPB-Worker-Panel
 
 import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // https://www.uuidgenerator.net/
-let userID = '89b3cbba-e6ac-485a-9481-976a0415eab9';
+let userID = 'ac300e22-a08f-4030-8d68-9cd321a3196f';
 
 // https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/
 const proxyIPs= ['bpb.yousef.isegaro.com'];
@@ -274,7 +274,7 @@ export default {
                         });
 
                     default:
-                        // return new Response('Not found', { status: 404 });
+                        return new Response('Not found', { status: 404 });
                         url.hostname = 'www.speedtest.net';
                         url.protocol = 'https:';
                         request = new Request(url, request);
@@ -715,7 +715,7 @@ function makeReadableWebSocketStream(webSocketServer, earlyDataHeader, log) {
 }
 
 // https://xtls.github.io/development/protocols/vless.html
-// https://github.com/zizifn/excalidraw-backup/blob/main/v2ray-protocol.excalidraw
+// https://github.anyone.gq/zizifn/excalidraw-backup/blob/main/v2ray-protocol.excalidraw
 
 /**
  * Processes the VLESS header buffer and returns an object with the relevant information.
@@ -2171,7 +2171,7 @@ async function renderHomePage (env, hostName, fragConfigs) {
             <hr>
             <div class="footer">
                 <i class="fa fa-github" style="font-size:36px; margin-right: 10px;"></i>
-                <a class="link" href="https://github.com/bia-pain-bache/BPB-Worker-Panel" target="_blank">Github</a>
+                <a class="link" href="https://github.anyone.gq/bia-pain-bache/BPB-Worker-Panel" target="_blank">Github</a>
                 <button id="openModalBtn" class="button">Change Password</button>
                 <button type="button" id="logout" style="background: none; margin: 0; border: none; cursor: pointer;">
                     <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>
@@ -2700,7 +2700,7 @@ function renderErrorPage (message, error, refer) {
             <h1>BPB Panel <span style="font-size: smaller;">${panelVersion}</span> 💦</h1>
             <div id="error-message">
                 <h2>${message} ${refer 
-                    ? 'Please try again or refer to <a href="https://github.com/bia-pain-bache/BPB-Worker-Panel/blob/main/README.md">documents</a>' 
+                    ? 'Please try again or refer to <a href="https://github.anyone.gq/bia-pain-bache/BPB-Worker-Panel/blob/main/README.md">documents</a>' 
                     : ''}
                 </h2>
                 <p><b>${error ? `⚠️ ${error}` : ''}</b></p>
@@ -4425,7 +4425,7 @@ const xrayConfigTemp = {
     },
     observatory: {
         probeInterval: "30s",
-        probeURL: "https://api.github.com/_private/browser/stats",
+        probeURL: "https://api.github.anyone.gq/_private/browser/stats",
         subjectSelector: ["prox"],
         EnableConcurrency: true,
     },
@@ -4531,7 +4531,7 @@ const singboxConfigTemp = {
         clash_api: {
             external_controller: "0.0.0.0:9090",
             external_ui: "yacd",
-            external_ui_download_url: "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
+            external_ui_download_url: "https://github.anyone.gq/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
             external_ui_download_detour: "direct",
             secret: "",
             default_mode: "rule"
